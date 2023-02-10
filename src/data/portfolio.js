@@ -1,18 +1,18 @@
 export default [
 	{
-		title: 'Помощник ЯКСЭ',
+		title: 'ТГ бот: "Помощник ЯКСЭ"',
 		imgUrl: 'assets/helper_stud.jpg',
 		stack: ['Python', 'Aiogram', 'SQLite'],
-		link: 'https://github.com/Animila/helper_students',
+		link: 'https://t.me/yakse_helper_students_bot',
 	},
 	{
-		title: 'Lutic App',
+		title: 'Приложение Lutic',
 		imgUrl: 'assets/lutic.png',
 		stack: ['Java', 'Android Studio', 'Firebase'],
 		link: 'https://github.com/Animila/Lutic',
 	},
 	{
-		title: 'BBteam',
+		title: 'Веб-сайт BBteam',
 		imgUrl: 'assets/bbteam.jpg',
 		stack: ['Laravel (PHP)', 'Tailwind', 'ReactJS'],
 		link: '-',

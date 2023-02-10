@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import Contact from './components/contact'
 import Footer from './components/Footer'
 import Intro from './components/intro'
+import Menu from './components/Menu'
 import Portfolio from './components/Portfolio/Portfolio'
-import Timeline from './components/Timeline/Timeline'
+import SkillsList from './components/Skills/SkillsList'
 
 function App() {
 	const [theme, setTheme] = useState(null)
@@ -33,17 +34,11 @@ function App() {
 
 	return (
 		<>
-			<button
-				type='button'
-				onClick={switchTheme}
-				className='fixed p-2 z-10 right-20 top-4 dark:bg-violet-900 text-lg p-1 rounded-md dark:text-white bg-violet-300'
-			>
-				{theme === 'dark' ? 'Светлая' : 'Темная'}
-			</button>
-			<div className='dark:bg-stone-900 dark:text-stone-300 bg-white text-stone-900 min-h-screen font-inter'>
+			<div className='dark:bg-stone-900 dark:text-stone-300 bg-white text-stone-900 min-h-screen font-inter w-100 py-4 px-4'>
+				<Menu callback={switchTheme} theme={theme} />
 				<Intro />
 				<Portfolio />
-				<Timeline />
+				<SkillsList />
 				<Contact />
 				<Footer />
 			</div>
