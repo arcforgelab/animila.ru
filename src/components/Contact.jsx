@@ -14,18 +14,21 @@ function Contact() {
 
 					<input
 						type='text'
+						required
 						name='name'
 						placeholder='Имя'
 						className='p-2 bg-transparent border-2 rounded-md focus:outline-none'
 					/>
 					<input
 						type='email'
+						required
 						name='email'
 						placeholder='Почта'
 						className='my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none'
 					/>
 					<textarea
 						name='message'
+						required
 						rows='10'
 						placeholder='Сообщение'
 						className='p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none'
