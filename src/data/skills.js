@@ -1,7 +1,7 @@
 export default [
 	{
 		work: 'Fullstack-разработка',
-		year: '4 года',
+		year: '1 год',
 		skills: [
 			'HTML5',
 			'CSS3',
@@ -20,7 +20,7 @@ export default [
 	},
 	{
 		work: 'Android разработка',
-		year: '2 года',
+		year: 'Пол-года',
 		skills: ['Java', 'Picasso', 'Retrofit2', 'Firebase', 'SQLite'],
 	},
 	{
