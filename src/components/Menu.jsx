@@ -1,6 +1,4 @@
-import react from 'react'
-
-function Menu({ callback, theme }) {
+const Menu = ({ callback, theme }) => {
 	return (
 		<div className='flex items-center w-100 justify-around'>
 			<div className='flex items-center'>

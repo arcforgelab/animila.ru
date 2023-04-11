@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from './Title'
 
-function Contact() {
+const Contact = () => {
 	return (
 		<div className='flex flex-col mb-10 mx-auto'>
 			<div className='flex justify-center items-center'>
