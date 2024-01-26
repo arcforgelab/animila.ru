@@ -1,0 +1,34 @@
+.main {
+	background-color: black;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	margin: 30px 10px 0 10px;
+	padding: 20px 20px;
+	border-radius: 12px;
+	border: 2px solid white;
+}
+
+.lists {
+	display: grid;
+	grid-template-columns: 46vw 46vw;
+	color: white;
+	padding: 0 10px;
+	justify-content: space-between;
+
+	.item {
+		margin-top: 10px;
+		border-radius: 12px;
+		border: 2px solid white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 95px;
+		font-size: 30px;
+	}
+}
