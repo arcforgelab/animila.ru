@@ -1,5 +1,6 @@
 .main {
 	background-color: black;
+	padding: 0 10px;
 }
 
 .title {
@@ -8,7 +9,7 @@
 	color: white;
 	font-size: 16px;
 	text-decoration: none;
-	margin: 30px 10px 0 10px;
+	margin-top: 30px;
 	padding: 20px 20px;
 	border-radius: 12px;
 	border: 2px solid white;
@@ -16,13 +17,13 @@
 
 .lists {
 	display: grid;
-	grid-template-columns: 46vw 46vw;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 10px;
+	gap: 11px;
 	color: white;
-	padding: 0 10px;
 	justify-content: space-between;
 
 	.item {
-		margin-top: 10px;
 		border-radius: 12px;
 		border: 2px solid white;
 		display: flex;

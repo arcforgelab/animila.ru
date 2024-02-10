@@ -1,6 +1,7 @@
 .main {
 	background: black;
 	color: white;
+	padding: 0 10px;
 }
 
 .mePhoto {
@@ -14,6 +15,7 @@
 	//гор, вер, размытие, растяжение, цвет
 	box-shadow: inset 0px -100px 70px 0px rgb(0 0 0 / 79%);
 	position: relative;
+	border-radius: 12px;
 }
 
 .title {
@@ -36,17 +38,8 @@
 	color: white;
 	font-size: 35px;
 	text-decoration: none;
-	margin: 20px 10px 0 10px;
+	margin-top: 20px;
 	padding: 20px 20px;
 	border-radius: 12px;
 	border: 2px solid white;
-}
-
-.aboutMe {
-	padding: 20px 30px;
-	text-align: justify;
-	font-size: 20px;
-	border: 2px solid white;
-	border-radius: 12px;
-	margin: 20px 10px 0 10px;
 }
