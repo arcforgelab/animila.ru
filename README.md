@@ -30,7 +30,7 @@ cd card_website
 2. Создайте образ
 
 ```sh
-docker build -t "card-website"
+docker build . -t "card-website"
 ```
 
 3. Запустите
