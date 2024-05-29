@@ -9,19 +9,18 @@ import SkillsList from './components/Skills/SkillsList'
 import classes from './styles/App.module.scss'
 
 function App() {
-	const [theme, setTheme] = useState(null)
 
 	return (
 		<>
 			<Menu />
-			<div className={classes.main}>
-				<Intro />
-				<IntroDescription />
-				<SkillsList />
-				<ProjectList />
-				<Contact />
-			</div>
-			<Footer />
+			{/*<div className={classes.main}>*/}
+			{/*	<Intro />*/}
+			{/*	<IntroDescription />*/}
+			{/*	<SkillsList />*/}
+			{/*	<ProjectList />*/}
+			{/*	<Contact />*/}
+			{/*</div>*/}
+			{/*<Footer />*/}
 		</>
 	)
 }
