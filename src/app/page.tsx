@@ -35,7 +35,7 @@ export default function Home() {
         },
     ]
     return (
-        <>
+        <main className="h-[88.6vh]">
            <div className="text-center pt-[9.0vh]">
                <h1 className="font-bold text-[50px]">Привет, я Animila</h1>
                <p className="text-[15px]">Backend, Frontend, DevOps, Architect, Adviser</p>
@@ -50,6 +50,6 @@ export default function Home() {
                     </Link>
                 )}
             </div>
-        </>
+        </main>
   );
 }

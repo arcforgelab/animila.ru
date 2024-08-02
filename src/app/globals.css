@@ -7,8 +7,19 @@
   --text: #B9B9B9 ;
 }
 
-
 body {
   color: var(--text);
-  background: var(--foreground-rgb)
+  background: var(--foreground-rgb);
+  -ms-overflow-style: none;  /* Скрыть полосу прокрутки в Internet Explorer и Edge */
+  scrollbar-width: none;     /* Скрыть полосу прокрутки в Firefox */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Скрытие вертикальной и горизонтальной полосы прокрутки */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none; /* Скрыть полосу прокрутки в браузерах на основе WebKit */
 }
