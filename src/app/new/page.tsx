@@ -23,10 +23,10 @@ export default function Create() {
     };
 
     return (
-        <main className="mb-[60px] mx-[50px]">
-            <h2 className="text-[40px] text-center mt-[60px]">Заказать услугу</h2>
-            <div className="grid grid-cols-12 gap-4">
-                <div className="col-span-8">
+        <main className="flex flex-col justify-center gap-[50px] my-[50px] px-[10px] md:px-[50px]">
+            <h2 className="text-[40px] text-center">Заказать услугу</h2>
+            <div className="grid grid-cols-12 gap-[50px]">
+                <div className="col-span-12 md:col-span-8">
                     <form action="https://getform.io/f/0f7d6781-beb4-4566-93e3-63d29b21e45d" method="POST"
                           encType="multipart/form-data">
                         <div className="mb-6">
@@ -83,17 +83,17 @@ export default function Create() {
                                     placeholder="Способ связи (или доп информация)"
                                     name="comment"
                                 />
+                                <button
+                                    type="submit"
+                                    className="text-[25px] bg-main text-black font-bold py-[20px] rounded-[15px] w-full mt-[50px]"
+                                >
+                                    Отправить
+                                </button>
                             </div>
                         </div>
-                        <button
-                            type="submit"
-                            className="px-[200px] py-[20px] text-[25px] bg-main text-black font-black rounded-[15px] mt-[50px]"
-                        >
-                            Отправить
-                        </button>
                     </form>
                 </div>
-                <div className="col-span-4 flex justify-center ">
+                <div className="md:col-span-4 hidden justify-center md:flex">
                     {selectedService !== '' ? services.find(value => value.id === selectedService)?.logo : services[4].logo}
                 </div>
             </div>
