@@ -75,33 +75,39 @@ export default function expo() {
         }
     ]
 
-    return <main className='mb-[60px]'>
-        <h2 className='text-[40px] text-center mt-[60px]'>Навыки</h2>
-        <div className='mt-[60px]'>
+    return <main className='flex flex-col gap-[50px] my-[50px] px-[10px] md:px-[9.55vw]'>
+        <h2 className='text-[40px] text-center'>Навыки</h2>
+
+        <div className="flex flex-col justify-center gap-[20px]">
             {expos.map((item, index) =>
                 <section
-                    className='flex justify-center flex-col border-2 py-[30px] px-[40px] w-[80.8vw] mx-auto mt-[20px] rounded-[20px]'
+                    className='flex justify-center flex-col gap-[23px] border-2 py-[30px] mx-auto rounded-[20px] px-[10px] w-full'
                     style={{borderColor: item.color}} key={index}>
 
-                    <h3 style={{color: item.color}} className='text-center text-[35px]'>{item.title}</h3>
+                    <h3 style={{color: item.color}} className='text-center text-[40px]'>{item.title}</h3>
 
-                    <div className='flex justify-around flex-wrap mt-[40px]'>
-                        {item.services.map((service, index) =>
-                            <div className='flex flex-col items-center'  key={index}>
-                                {service.logo}
-                                <p className='text-[20px] w-[220px] text-center flex justify-center mt-[20px]'>{service.title}</p>
+                    <div className="flex flex-col justify-center gap-[40px]">
+                        <div className='flex justify-around flex-col md:flex-row md:flex-wrap gap-[25px] '>
+                            {item.services.map((service, index) =>
+                                <div className='flex flex-col items-center' key={index}>
+                                    {service.logo}
+                                    <p className='text-[20px] w-[220px] text-center flex justify-center mt-[20px]'>{service.title}</p>
+                                </div>
+                            )}
+                        </div>
+
+
+                        <div className="flex flex-col justify-center gap-[20px]">
+                            <h3 style={{color: item.color}} className='text-center text-[30px]'>Стек</h3>
+
+                            <div className='flex justify-center gap-[24px] flex-wrap'>
+                                {item.stacks.map((stack, index) =>
+                                    <p className='text-[20px] w-full py-[24px] md:px-[24px] md:w-fit border-[1px] border-text rounded-[12px] whitespace-pre-line flex justify-center text-center'
+                                       key={index}>{stack}</p>
+                                )}
                             </div>
-                        )}
+                        </div>
                     </div>
-
-                    <h3 style={{color: item.color}} className='text-center text-[30px] mt-[20px]'>Стек</h3>
-
-                    <div className='flex justify-center mt-[20px] gap-[24px] flex-wrap'>
-                        {item.stacks.map((stack, index) =>
-                            <p className='text-[20px] p-[24px] border-[1px] border-text rounded-[12px] whitespace-pre-line flex justify-center text-center' key={index}>{stack}</p>
-                        )}
-                    </div>
-
                 </section>
             )}
         </div>
