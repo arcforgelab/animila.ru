@@ -21,7 +21,9 @@ export default function RootLayout({
         <html lang="ru">
         <head>
             <title>Animila</title>
-            <meta name="description" content="Fullstack-разработчик занимающийся комплексной работой над сайтом: backend, frontend, базы данных, DevOps, администрирование, микросервисы"/>
+            <link rel="icon" href="/assets/favicon.ico" sizes="any"/>
+            <meta name="description"
+                  content="Fullstack-разработчик занимающийся комплексной работой над сайтом: backend, frontend, базы данных, DevOps, администрирование, микросервисы"/>
         </head>
         <body className={`${inter.className} h-[500px]`}>
         <header className="border-b-[1px] border-b-main h-[7.2vh] flex items-center justify-between md:px-[50px]">
