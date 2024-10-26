@@ -2,8 +2,8 @@ import {Metadata, MetadataRoute} from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: "Animila",
-        short_name: "Animila",
+        name: "ArcForgeLab",
+        short_name: "ArcForgeLab",
         orientation: "portrait-primary",
         description: "Fullstack-разработчик занимающийся комплексной работой над сайтом: backend, frontend, базы данных, DevOps, администрирование, микросервисы",
         icons: [
@@ -32,7 +32,7 @@ export default function manifest(): MetadataRoute.Manifest {
         theme_color: "#ffbc00",
         background_color: "#ffc90b",
         display: "standalone",
-        id: "Animila",
+        id: "ArcForgeLab",
         dir: "auto",
         lang: "ru",
         categories: [

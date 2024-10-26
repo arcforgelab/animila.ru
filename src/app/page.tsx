@@ -13,22 +13,22 @@ export default function Home() {
         {
             "title": "github",
             "logo": github(),
-            "url": "https://github.com/Animila"
+            "url": "https://github.com/ArcForgeLab"
         },
         {
             "title": "vkontakte",
             "logo": vk(),
-            "url": "https://vk.com/animila"
+            "url": "https://vk.com/ArcForgeLab"
         },
         {
             "title": "telegram",
             "logo": tg(),
-            "url": "https://t.me/animila_local"
+            "url": "https://t.me/ArcForgeLab"
         },
         {
             "title": "steam",
             "logo": steam(),
-            "url": "https://steamcommunity.com/id/animila"
+            "url": "https://steamcommunity.com/id/ArcForgeLab"
         },
         {
             "title": "discord",
@@ -45,7 +45,7 @@ export default function Home() {
                 <InternetIcon/>
             </div>
            <div className="text-center px-[45px]">
-               <h1 className="font-bold text-[30px] md:text-[50px]">Привет, я Animila</h1>
+               <h1 className="font-bold text-[30px] md:text-[50px]">Привет, я ArcForgeLab</h1>
                <p className="mt-[13px] text-[16px] md:text-[15px]">Backend, Frontend, DevOps, Architect, Adviser</p>
            </div>
             <div className="w-fit p-[20px] border-text border-2 rounded-[20px] flex items-center justify-center mx-auto">

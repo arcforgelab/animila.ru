@@ -36,7 +36,7 @@ export default function RootLayout({
                     quality={100}
                     priority={true} />
                 <Link href={'/'} className='text-[25px] font-bold ml-[18px]'>
-                    Animila
+                    ArcForgeLab
                 </Link>
             </div>
             <menu className="md:flex ssm:hidden items-center flex-row md:gap-[40px] text-[20px]">
@@ -48,7 +48,7 @@ export default function RootLayout({
         </header>
         {children}
         <footer className="border-t-[1px] border-t-main h-[4.2vh] flex justify-center items-center text-[16px]">
-            animila@2024
+            ArcForgeLab@2024
         </footer>
         </body>
         </html>
