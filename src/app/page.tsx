@@ -7,6 +7,9 @@ import {steam} from "@/components/Icons/steam";
 import {discord} from "@/components/Icons/discord";
 import {BrowserIcons} from "@/components/Icons/Browser";
 import {InternetIcon} from "@/components/Icons/internet";
+import {reddit} from "@/components/Icons/reddit";
+import {twitch} from "@/components/Icons/twitch";
+import {twitter} from "@/components/Icons/twitter";
 
 export default function Home() {
     const social = [
@@ -35,6 +38,21 @@ export default function Home() {
             "logo": discord(),
             "url": "https://discord.gg/YJJDvVwUre"
         },
+        {
+            "title": "reddit",
+            "logo": reddit(),
+            "url": "https://www.reddit.com/user/arcforgelab"
+        },
+        {
+            "title": "twitch",
+            "logo": twitch(),
+            "url": "https://www.twitch.tv/arcforgelab"
+        },
+        {
+            "title": "twitter",
+            "logo": twitter(),
+            "url": "https://x.com/arcforgelab"
+        },
     ]
     return (
         <main className="flex flex-col py-[50px] gap-[50px] md:gap-[100px] px-[10px] md:h-[88vh]">
@@ -51,9 +69,9 @@ export default function Home() {
             <div className="w-fit p-[20px] border-text border-2 rounded-[20px] flex items-center justify-center mx-auto">
                 <p className="text-[20px]">На данный момент сайт в процессе разработки</p>
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-[20px]">
+            <div className="flex flex-col flex-wrap md:grid md:grid-cols-4 items-center justify-center gap-[20px]">
                 {social.map((item, index) =>
-                    <Link href={item.url} target="_blank" key={index} className="w-full md:w-[206px] py-[29px] border-text border-[3px] rounded-[15px] flex justify-center items-center">
+                    <Link href={item.url} target="_blank" key={index} className="box-border w-full py-[29px] border-text border-[3px] rounded-[15px] flex justify-center items-center">
                         {item.logo}
                     </Link>
                 )}
